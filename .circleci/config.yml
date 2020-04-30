@@ -1,14 +1,10 @@
 
+version: 2
 jobs:
-  steps:
-    - checkout
-    - run:
-        name: tests
-        command: |
-          ls
-          echo 'build start'
-          bash .circleci/build.sh
-        only:
-          develop
-
-
+  build:
+    docker: # Executor タイプです。他に machine、macOS という実行タイプを指定できます
+      - image: circleci/node:4.8.2 # プライマリコンテナです。このなかでジョブコマンドが実行されます
+    steps:
+      - checkout # プロジェクトのディレクトリにあるコードをチェックアウトします
+      - run: echo "hello world" # 「echo」コマンドを実行します
+      
