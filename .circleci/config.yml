@@ -6,5 +6,6 @@ jobs:
       - image: circleci/node:4.8.2 # プライマリコンテナです。このなかでジョブコマンドが実行されます
     steps:
       - checkout # プロジェクトのディレクトリにあるコードをチェックアウトします
-      - run: echo "hello world" # 「echo」コマンドを実行します
+      - run:
+        - echo "hello world" # 「echo」コマンドを実行します
       
