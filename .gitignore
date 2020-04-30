@@ -1,6 +1,6 @@
 UE4/circleCI_test_build/WinExe
 UE4/circleCI_test_build/.vs
-/Binaries
-/DerivedDataCache
-/Intermediate
-/Saved
+UE4/circleCI_test_build/Binaries
+UE4/circleCI_test_build/DerivedDataCache
+UE4/circleCI_test_build/Intermediate
+UE4/circleCI_test_build/Saved
